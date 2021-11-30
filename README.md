@@ -87,7 +87,11 @@ pip install tensorflow-probability  #currently it will install TFP==0.12
 pip install gpflow  #currently it will install GPflow==2.1
 ```
 
-
+# import pcl in python3.8 
+- use this command to install pcl for python3.8
+```bash
+sudo apt install python3-pcl #this just supports python3.8 env.
+```
 
 [nvidia-drivers]: https://www.nvidia.com/download/index.aspx?lang=en-us
 [phoenixnap tutorial]: https://phoenixnap.com/kb/install-nvidia-drivers-ubuntu
