@@ -67,7 +67,7 @@ $ sudo chmod a+r /usr/local/cuda/include/cudnn.h /usr/local/cuda/lib64/libcudnn*
 
 # Install TensorFlow TF and TensorFlow Probability TFP 
 - Check [tensorflow-install guide][] for dependencies, tensorflow requires python3.7 or higher, so if you are using ubuntu 18.04 with ros-melodic and python2/python3.6, you need to install python3.7 or higher and then create a virtual environment for python3.7 or higher using `python3-venv` or `conda` or any other tool for creating virtual environments. you can check [upgrade python tutorial][] to change the python3 default version.
-- check TensorFlow Probability TFP version compatiblitiy: TFP 0.12 requires TF>=2.4, TFP 0.11 requires TF>=2.3, and TFP 0.10 requires TF>=2.2.
+- check TensorFlow Probability TFP version compatiblitiy: TFP 0.12 requires TF>=2.4, TFP 0.11 requires TF>=2.3, and TFP 0.10 requires TF>=2.2. (TFP 0.12 & 0.15 are compatible with TF 2.7)
 - Install python3.7 or higher (ubuntu20 have already python3.8)
 - Create virtual environment using python-venv or any other tool 
 - Install tensorflow using `pip`, check [tensorflow-install guide][]
