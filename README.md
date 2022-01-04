@@ -92,6 +92,24 @@ pip install gpflow  #currently it will install GPflow==2.1
 sudo apt install python3-pcl #this just supports python3.8 env.
 ```
 
+# install systemback (backup the system)
+
+check the following website [systemback][], ubuntu 20 section
+```bash
+sudo add-apt-repository --remove ppa:nemh/systemback
+
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 382003C2C8B7B4AB813E915B14E4942973C62A1B
+# if last command give error, check another keyserver 
+# sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 382003C2C8B7B4AB813E915B14E4942973C62A1B
+
+sudo add-apt-repository "deb http://ppa.launchpad.net/nemh/systemback/ubuntu xenial main"
+
+sudo apt update
+
+sudo apt install systemback
+```
+
+
 [nvidia-drivers]: https://www.nvidia.com/download/index.aspx?lang=en-us
 [phoenixnap tutorial]: https://phoenixnap.com/kb/install-nvidia-drivers-ubuntu
 [tensorflow compatibility table]: https://www.tensorflow.org/install/source#gpu 
@@ -102,3 +120,4 @@ sudo apt install python3-pcl #this just supports python3.8 env.
 [tensorflow-probability install guide]: https://www.tensorflow.org/probability/install
 [upgrade python tutorial]: https://medium.com/@jeethu.samsani/upgrade-python-3-5-to-3-7-in-ubuntu-a1d4347b6a3
 [gpflow github repository]: https://github.com/GPflow/GPflow
+[systemback]: https://stechalon.com/install-systemback-restore-previous-state-ubuntu-linux
