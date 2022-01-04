@@ -36,7 +36,6 @@ $ sudo sh cuda_11.2.2_460.32.03_linux.run
 ```
 - After installed, check cuda version:
 ```bash
-$ nvcc –version 
 $ whereis cuda 
 ```
 - Add cuda to environment variables, open the ~/.bashrc file and add the following lines
