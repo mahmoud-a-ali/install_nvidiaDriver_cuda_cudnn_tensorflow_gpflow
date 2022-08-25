@@ -1,5 +1,5 @@
 
-# Most recent compatable versions: ubunu `2`,  nvidia `470`, cuda `11.4`, TF `2.8`, TFP `0.16`
+# Most recent compatable versions: ubunu `20`,  nvidia `470`, cuda `11.4`, TF `2.8`, TFP `0.16`
 
 # Install nvidia driver 
 
