@@ -1,3 +1,6 @@
+
+# Most recent compatable versions: ubunu `2`,  nvidia `470`, cuda `11.4`, TF `2.8`, TFP `0.16`
+
 # Install nvidia driver 
 
 - Check the nvidia driver version that is compatable with your GPU: [nvidia-drivers][] 
@@ -53,7 +56,6 @@
     # Then do update your grub:
 
     sudo update-grub
-
 
 
 # Install cuda
