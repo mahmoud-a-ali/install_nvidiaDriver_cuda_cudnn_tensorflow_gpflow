@@ -60,7 +60,7 @@
 
 # Install cuda
 - Select which version you want to install based on the [tensorflow compatibility table][] with cuda nad cudnn, and [the minimum Required Driver Version for CUDA][], then download the selected one from [cuda-archive website][]
-- On the [cuda-archive website][], select: Operating System `Linux`, Architecture `x86-64`, Distribution `ubuntu`, Version `18.04`, Installer Type `runfile (local)`
+- On the [cuda-archive website][], select: Operating System `Linux`, Architecture `x86-64`, Distribution `ubuntu`, Version `18.04`, Installer Type `runfile (local)` [or choose deb[local] and follow the commands which qill appear after your choice, this works for x15 laptop]
 
 - After downloading the `runfile`, follow the base installer commands (here considering `cuda version: 11.2.2`), Note that the driver is already installed on the previous section, so when a message appears to tell you ` "a driver found ... " ` choose `continue` then `accept` the license agreement, then `uncheck` the driver item from the list by pressing `enter`, and finally choose `install` 
 ```bash
@@ -105,7 +105,7 @@ $ sudo chmod a+r /usr/local/cuda/include/cudnn.h /usr/local/cuda/lib64/libcudnn*
 - Create virtual environment using python-venv or any other tool 
 - Install tensorflow using `pip`, check [tensorflow-install guide][]
 ```bash
-pip install tensorflow  #currently it will install TF==2.7
+pip install tensorflow==x.x [version: 2.8]  #currently it will install TF==2.7
 ```
 - Install tensorflow probability using `pip`, check [tensorflow-probability install guide][]
 ```bash
