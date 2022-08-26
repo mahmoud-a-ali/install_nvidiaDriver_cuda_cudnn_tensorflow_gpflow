@@ -110,6 +110,7 @@ pip install tensorflow==x.x [version: 2.8]  #currently it will install TF==2.7
 - Install tensorflow probability using `pip`, check [tensorflow-probability install guide][]
 ```bash
 pip install tensorflow-probability  #currently it will install TFP==0.12
+pip install tensorflow-probability==0.16.0
 ```
 
 # Install gpflow 
