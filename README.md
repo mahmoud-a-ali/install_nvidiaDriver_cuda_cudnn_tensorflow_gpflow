@@ -1,5 +1,6 @@
 
-# Most recent compatable versions: ubunu `20`,  nvidia `470`, cuda `11.4`, cudnn `8.2.4`, TF `2.11.0`, TFP `0.19.0`, gpf `2.5.1`
+# L340: Most recent compatable versions: ubunu `20`,  nvidia `470`, cuda `11.4`, cudnn `8.2.4`, TF `2.11.0`, TFP `0.19.0`, gpf `2.5.1`
+# NUC_skull: Most recent compatable versions: ubunu `20`,  nvidia `470`, cuda `11.4`, cudnn `-----`, TF `2.8.0`, TFP `0.16.0`, gpf `2.5.2` 
 # Most recent compatable versions: ubunu `20`,  nvidia `470`, cuda `11.4`, TF `2.8`, TFP `0.16`
 
 # Install nvidia driver 
