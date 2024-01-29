@@ -24,35 +24,7 @@
     ```bash
     $ nvidia-smi
     ```
-# disable secure boot or modify grub "Husky"
-    - https://askubuntu.com/questions/1024895/why-do-i-need-to-replace-quiet-splash-with-nomodeset
-    
-    # open Grub
-    sudo gedit /etc/default/grub
-    
-    # A text editor will open with the grub configuration file. Near the top of that file you will see something very similar to this:
 
-    GRUB_DEFAULT=0
-    #GRUB_HIDDEN_TIMEOUT=0
-    GRUB_HIDDEN_TIMEOUT_QUIET=true
-    GRUB_TIMEOUT=10
-    GRUB_DISTRIBUTOR=`lsb_release -i -s 2> /dev/null || echo Debian`
-    GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
-    GRUB_CMDLINE_LINUX=""
-    
-    # add your custom boot options to the GRUB_CMDLINE_LINUX_DEFAULT line, so for instance:
-
-    GRUB_DEFAULT=0
-    #GRUB_HIDDEN_TIMEOUT=0
-    GRUB_HIDDEN_TIMEOUT_QUIET=true
-    GRUB_TIMEOUT=10
-    GRUB_DISTRIBUTOR=`lsb_release -i -s 2> /dev/null || echo Debian`
-    GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nomodeset"
-    GRUB_CMDLINE_LINUX=""
-    
-    # Then do update your grub:
-
-    sudo update-grub
 
 
 # Install cuda
@@ -139,6 +111,36 @@ sudo apt update
 
 sudo apt install systemback
 ```
+
+# disable secure boot or modify grub "Husky"
+    - https://askubuntu.com/questions/1024895/why-do-i-need-to-replace-quiet-splash-with-nomodeset
+    
+    # open Grub
+    sudo gedit /etc/default/grub
+    
+    # A text editor will open with the grub configuration file. Near the top of that file you will see something very similar to this:
+
+    GRUB_DEFAULT=0
+    #GRUB_HIDDEN_TIMEOUT=0
+    GRUB_HIDDEN_TIMEOUT_QUIET=true
+    GRUB_TIMEOUT=10
+    GRUB_DISTRIBUTOR=`lsb_release -i -s 2> /dev/null || echo Debian`
+    GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
+    GRUB_CMDLINE_LINUX=""
+    
+    # add your custom boot options to the GRUB_CMDLINE_LINUX_DEFAULT line, so for instance:
+
+    GRUB_DEFAULT=0
+    #GRUB_HIDDEN_TIMEOUT=0
+    GRUB_HIDDEN_TIMEOUT_QUIET=true
+    GRUB_TIMEOUT=10
+    GRUB_DISTRIBUTOR=`lsb_release -i -s 2> /dev/null || echo Debian`
+    GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nomodeset"
+    GRUB_CMDLINE_LINUX=""
+    
+    # Then do update your grub:
+
+    sudo update-grub
 
 
 [nvidia-drivers]: https://www.nvidia.com/download/index.aspx?lang=en-us
